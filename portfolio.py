@@ -49,6 +49,15 @@ elif menu == "Automação":
     st.write("Aqui você encontrará scripts para automatizar tarefas repetitivas.")
 
     # Exemplos de automação (personalize conforme seus scripts)
+    from st_aggrid import AgGrid
+
+    data = {
+        'Produto': ['Produto A', 'Produto B', 'Produto C'],
+        'Quantidade': [10, 20, 15]
+    }
+    df = pd.DataFrame(data)
+    AgGrid(df)
+
     st.write("- Enviar e-mails automaticamente")
     st.write("- Processar arquivos em lote")
 
