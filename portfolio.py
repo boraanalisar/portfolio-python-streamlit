@@ -1,4 +1,5 @@
 import streamlit as st
+import pandas as pd
 
 # Título do portfólio
 st.title("Portfólio de Scripts Python - Gabriel")
