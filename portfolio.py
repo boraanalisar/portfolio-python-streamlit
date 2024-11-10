@@ -2,8 +2,10 @@ import streamlit as st
 from converter_pdf_para_excel import converter_pdf_para_excel
 
 # Título do portfólio
-st.title("Portfólio de Scripts Python - José Carlos")
+#st.title("Portfólio de Scripts Python - José Carlos")
 
+# Título do portfólio na barra lateral
+st.sidebar.title("Portfólio - José Carlos")
 # Menu lateral
 menu = st.sidebar.selectbox("Escolha a categoria:", ["Pdf para Excel"])
 
