@@ -2,34 +2,19 @@ import streamlit as st
 import pandas as pd
 
 # Título do portfólio
-st.title("Portfólio de Scripts Python - Gabriel")
+st.title("Portfólio de Scripts Python - José Carlos")
 
 # Menu lateral
-menu = st.sidebar.selectbox("Escolha a categoria:", ["Calculadoras", "Análises de Dados", "Automação", "Visualizações"])
+menu = st.sidebar.selectbox("Escolha a categoria:", ["Pdf para Excel"])
 
 # Categoria: Calculadoras
-if menu == "Calculadoras":
-    st.header("Calculadora Simples")
+if menu == "Pdf para Excel":
+    st.header("Converte TIPI em PDF para Excel")
     
-    # Entradas do usuário
-    num1 = st.number_input("Digite o primeiro número:", value=0)
-    num2 = st.number_input("Digite o segundo número:", value=0)
-    operacao = st.selectbox("Escolha a operação:", ["Soma", "Subtração", "Multiplicação", "Divisão"])
 
-    # Cálculo
-    if st.button("Calcular"):
-        if operacao == "Soma":
-            resultado = num1 + num2
-        elif operacao == "Subtração":
-            resultado = num1 - num2
-        elif operacao == "Multiplicação":
-            resultado = num1 * num2
-        elif operacao == "Divisão":
-            resultado = num1 / num2 if num2 != 0 else "Erro! Divisão por zero."
-        st.write(f"O resultado da {operacao} é: {resultado}")
 
 # Categoria: Análises de Dados
-elif menu == "Análises de Dados":
+'''elif menu == "Análises de Dados":
     st.header("Análise de Dados de Vendas")
     st.write("Aqui você pode carregar um arquivo CSV de vendas e visualizar uma análise.")
 
@@ -77,5 +62,5 @@ elif menu == "Visualizações":
     fig, ax = plt.subplots()
     ax.plot(x, y)
 
-    st.pyplot(fig)
+    st.pyplot(fig)'''
 
