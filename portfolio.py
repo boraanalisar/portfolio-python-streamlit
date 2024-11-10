@@ -5,7 +5,7 @@ from converter_pdf_para_excel import converter_pdf_para_excel
 #st.title("Portfólio de Scripts Python - José Carlos")
 
 # Título do portfólio na barra lateral
-st.sidebar.title("Portfólio - José Carlos")
+st.sidebar.title("Portfólio - Bora Analisar")
 # Menu lateral
 menu = st.sidebar.selectbox("Escolha a categoria:", ["Pdf para Excel"])
 
